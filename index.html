@@ -6,20 +6,197 @@
         <!-- character encoding -->
         <meta charset="UTF-8">
         <!-- title tag -->
-        <title>Product/Company Page Project</title>
+        <title>Product/Business Page - Tony Beati</title>
         <!-- mobile-friendly viewport -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- W3.CSS stylesheet -->
         <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
         <!-- custom style -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- font awesome icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Syncopate:700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
     </head>
 
     <body>
-        
-        <h1>Hello World</h1>
 
-        
+        <!-- top nav, desktop and tablet -->
+        <div class="w3-top">
+            <div class="w3-bar w3-red">
+                <a href="#home" class="w3-bar-item w3-button">Home</a>
+                <a href="#about" class="w3-bar-item w3-button w3-hide-small">About</a>
+                <a href="#menu" class="w3-bar-item w3-button w3-hide-small">Menu</a>
+                <a href="#hours" class="w3-bar-item w3-button w3-hide-small">Hours</a>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="topNav()">&#9776;</a>
+            </div>
+            <div id="mobileNav" class="w3-bar-block w3-theme-l1 w3-hide w3-hide-large w3-hide-medium">
+                <a href="#about" class="w3-bar-item w3-button">About</a>
+                <a href="#training" class="w3-bar-item w3-button">Training</a>
+                <a href="#teams" class="w3-bar-item w3-button">Teams</a>
+            </div>
+        </div>
+        <!-- top nav, mobile -->
+
+        <!-- First Parallax Image with Logo Text -->
+        <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+            <div class="w3-display-middle" style="white-space:nowrap;">
+                <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Best Pizza in Andover</span>
+            </div>
+        </div>
+
+        <!-- Container (About Section) -->
+        <div class="w3-padding-64" id="about">
+
+            <div class="w3-row w3-container">
+                <h1>About</h1>
+            </div>
+                
+                </div>
+                
+                <div class="w3-row">
+                <div class="w3-half">
+                    <div class="w3-card">
+                        <img src="img/Mr-takeout-sign" class="w3-image" alt="Sign">
+                    </div>
+                </div>
+                <p>Mr Takeout started out as The Grocery Bag in Andover in 1977. The founder was named George Howie and the store has three simple concepts they have followed since it opened its doors; Quality, Service, and speed. Howie's son, Jonathan has expanded the restauraunt's variety with pizza, calzones, and fresh salads<br><br>Contact: Here are <a href="http://www.mrtakeoutonline.com/index.php?link=contact">Directions and Ways to Contact</a> Mr Takeout</p>
+                
+        </div>
+                
+
+
+        <!-- Second Parallax Image with Logo Text -->
+        <div class="bgimg-2 w3-display-container w3-opacity-min" id="home">
+        </div>
+
+
+        <!-- Container (Training Section) -->
+        <section class="w3-padding-64" id="menu">
+
+            <div class="w3-row w3-container">
+                <h1>Menu</h1>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-half">
+                    <div class="w3-card">
+                        <img src="img/Mr-takeout-menu.jpg" class="w3-image" alt="Mr Takeout Menu">
+                    </div>
+                </div>
+                <div class="w3-half">
+
+                    <button onclick="accordion('dribbling')" class="w3-button w3-block w3-left-align w3-theme w3-border">Hand Tossed Pizza and Calzones</button>
+
+                    <div id="dribbling" class="w3-container w3-hide">
+                        <p>Toppings: Pepperoni, Sausage, Bacon, Meatball, Grilled, Chicken, Onions, Peppers, Mushroom, Feta, Garlic, Olives, Pineapple, Ham, Spinach ,Fried eggplant , Fresh Tomato, Salami, Banana Peppers, Broccoli and Jalapenos, Large	Calzone<br><br>
+Cheese: 9.99<br>
+One-Topping: 11.49<br>
+Two-Toppings: 12.49<br>
+Three-Toppings: 13.49<br>
+Four-Toppings: 14.49
+                   </p>
+                    </div>
+
+                    <button onclick="accordion('passing')" class="w3-button w3-block w3-left-align w3-theme w3-border">Specialty Pizzas</button>
+
+                    <div id="passing" class="w3-container w3-hide">
+                        <p> Some of our Specialties..<br><br>Cheeseburger Pizza:<br>
+- Meatball, Mozzarella and Jack cheese, Onions, Pickles, and Tomatos, all on tom of our Mustard and Ketchup sauce.	14.99<br><br> 
+Chicken Broccoli Alfredo:<br>
+- Grilled Chicken, Broccoli on top of Alfredo Sauce. 	13.99<br><br>
+Golden Warrior Pizza:<br>
+- Golden BBQ based pizza with steak, fried chicken, Mac and Cheese Bites, and Cheese.	14.99	</p>
+                    </div>
+
+                    <button onclick="accordion('positioning')" class="w3-button w3-block w3-left-align w3-theme w3-border">Dinners</button>
+
+                    <div id="positioning" class="w3-container w3-hide">
+                        <p>Some of our dinners..<br><br>Chicken Tender: 9.99<br>
+                        - Served with Honey Mustard or BBQ<br>	 
+Chicken Wings: 10.99<br>
+- Choose any Flavor Sauce<br>	 
+Angus Cheeseburger: 8.99<br> 
+- Add Bacon $1.00<br>	 
+Penne and Marinara: 6.99<br>
+                   - Marinara sauce served over penne pasta with garlic bread</p>
+                    </div>
+
+                    <button onclick="accordion('defense')" class="w3-button w3-block w3-left-align w3-theme w3-border">Sides</button>
+
+                    <div id="menu" class="w3-container w3-hide">
+                        <p>Some of our sides..<br><br>Slice of Cheese Pizza: 2.50<br>
+Slice of Pepperoni Pizza: 2.75<br>
+French Fries: Small 2.99	Large 3.99<br>
+Waffle Fries: Small 3.49	Large 4.49<br>
+Onion Rings: 4.49<br>
+ 
+*NEW*Sweet Potato Fries 4.49</p>
+                    </div>
+
+
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <!-- Second Parallax Image with Logo Text -->
+        <div class="bgimg-2 w3-display-container w3-opacity-min" id="home">
+        </div>
+
+
+        <!-- Container (Training Section) -->
+        <section class="w3-padding-64" id="hours">
+
+            <div class="w3-row w3-container">
+                <h1>Hours</h1>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-half">
+                    <div class="w3-card">
+                        <img src="img/Mr-takeout-hours.jpg" class="w3-image" alt="Andover Mr. Takeout"> 
+                    </div>
+                </div>
+                <div class="w3-half">
+
+                    <div class="w3-bar w3-theme">
+                        <button class="w3-bar-item w3-button" onclick="openTab('Weekdays')">Weekdays</button>
+                        <button class="w3-bar-item w3-button" onclick="openTab('Weekends')">Weekends</button>
+                    </div>
+
+                    <div id="Weekdays" class="tab">
+                        <div class="w3-container">
+                            <h3>Summer Hours</h3>
+                            <p>Monday - Friday:<br>10:00 AM - 10:00 PM</p>
+                        </div>
+
+                    </div>
+
+                    <div id="Weekends" class="tab" style="display:none">
+                        <h3>Summer Hours</h3>
+                        <p>Saturday: 11:00 AM - 10:00 PM<br><br>Sunday: Closed</p> 
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </section>
+
+        <!-- Javascript -->
+
+        <script src="js/topNav.js"></script>
+        <script src="js/accordion.js"></script>
+        <script src="js/tabs.js"></script>
+
     </body>
 
 </html>
